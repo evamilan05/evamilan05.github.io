@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Blackstone Bistro: Pizza-on-Demand</title>
+    <link rel="stylesheet" href="pizza-styles.css">
+</head>
+
+<body>
+<!-- Main heading -->
+<h1>Blackstone Bistro | Pizza-on-Demand</h1>
+
+<!-- Introduction text -->
+<p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+
+<!-- Order form with GET method -->
+<form action="results.html" method="get">
+    <!-- Customer information section -->
+    <fieldset>
+        <legend>Your Information</legend>
+        <ul>
+            <li><label for="form-name">Name:</label> 
+                <input type="text" name="customername" id="form-name" required></li>
+            <li><label for="form-address">Address:</label> 
+                <input type="text" name="address" id="form-address" required></li>
+            <!-- students need to fill out form-tel, form-email and form-story -->
+                <textarea name="instructions" rows="4" cols="60" maxlength="400" 
+                          id="form-story" placeholder="No more than 400 characters long"></textarea></li>
+        </ul>
+    </fieldset>
+
+    <h2>Design your dream pizza:</h2>
+    
+    <!-- Pizza specifications section -->
+    <fieldset>
+        <legend>Pizza specs</legend>
+        
+        <!-- Crust selection -->
+        <fieldset>
+            <legend>Crust <em>(Choose one)</em>:</legend>
+            <ul>
+                <li><label><input type="radio" name="crust" value="white" required> Classic white</label></li>
+               <!-- students need to fill out four other choices -->
+            </ul>
+        </fieldset>
+
+        <!-- Toppings selection -->
+        <fieldset>
+            <legend>Toppings <em>(Choose as many as you want)</em></legend>
+            <ul>
+                <li><label><input type="checkbox" name="toppings" value="red sauce" checked> Red sauce</label></li>
+                <li><label><input type="checkbox" name="toppings" value="white sauce"> White sauce</label></li>
+                <li><label><input type="checkbox" name="toppings" value="mozzarella"> Mozzarella</label></li>
+               <!-- students need to fill out four other choices -->
+            </ul>
+        </fieldset>
+
+        <!-- Pizza quantity selection -->
+        <fieldset>
+            <legend>Number</legend>
+            <p>How many pizzas: 
+                <select name="pizzas" size="1" required>
+                    <option>1</option>
+                    <option>2</option>
+                     <!-- students need to fill out four other choices -->
+                </select>
+            </p>
+        </fieldset>
+    </fieldset>
+
+    <!-- Form submission buttons -->
+    <p>
+         <!-- students need to fill out adding the two buttons -->
+    </p>
+</form>
+</body>
+</html>
